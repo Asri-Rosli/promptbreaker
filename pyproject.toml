@@ -1,0 +1,10 @@
+[project]
+name = "promptbreaker"
+version = "0.1.0"
+description = "Automated red teaming of an LLM web app: prompt injection, secret leakage and tool abuse, measured against defenses"
+requires-python = ">=3.10"
+dependencies = ["flask>=3.0", "pyyaml>=6.0", "requests>=2.31"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
